@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Smile Detection</title>
+    <link rel = "stylesheet" type = "text/css" href = "../static/style.css">
+    <!-- <style>
+        .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+        .video-container, .selfie-container {
+            text-align: center;
+        }
+        img {
+            margin: 10px;
+            border: 2px solid #333;
+        }
+    </style> -->
+</head>
+<body>
+    <div class="container">
+        <div class="video-container">
+            <h2>Live Camera</h2>
+            <img src="{{ url_for('video_feed') }}" width="640" height="480">
+        </div>
+        <div class="selfie-container">
+            <h2>Latest Selfie</h2>
+            <img src="{{ url_for('static', filename='selfie.jpg') }}" width="640" height="480" 
+                 id="selfieImage" onerror="this.src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNk+A8AAQUBAScY42YAAAAASUVORK5CYII='">
+        </div>
+    </div>
+    <script>
+        // Refresh selfie image every second
+        setInterval(function() {
+            const selfieImg = document.getElementById('selfieImage');
+            if (selfieImg) {
+                selfieImg.src = "{{ url_for('static', filename='selfie.jpg') }}?" + new Date().getTime();
+            }
+        }, 1000);
+    </script>
+</body>
+</html>
