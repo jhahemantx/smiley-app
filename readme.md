@@ -2,6 +2,11 @@
 
 This is a Flask-based web application that uses OpenCV and MediaPipe to detect smiles and automatically take selfies. 
 
+## Preview
+![IMG_20250218_111715](https://github.com/user-attachments/assets/d4d66fb7-8f1a-4ded-a745-8dafd0e6d714)
+![vdo](https://github.com/user-attachments/assets/4351980a-cab4-4518-b70e-e95ea2b56e7f)
+
+
 ## Features
 - Real-time webcam feed using OpenCV.
 - Face detection with MediaPipe FaceMesh.
@@ -13,13 +18,13 @@ Make sure you have the following installed:
 
 - Python 3.x
 - Flask
-- OpenCV (`cv2`)
+- OpenCV
 - MediaPipe
 
 ## Installation
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-repo/auto-selfie-flask.git
+   git clone https://github.com/jhahemantx/smiley-app.git
    cd auto-selfie-flask
    ```
 
@@ -44,7 +49,6 @@ Make sure you have the following installed:
 │── static/
 │   ├── selfie.jpg  # Stores captured selfie
 │   ├── style.css  
-|   |
 │── templates/
 │   ├── index.html  # Web interface
 │── app.py          # Main Flask application
