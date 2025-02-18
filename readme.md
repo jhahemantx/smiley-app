@@ -4,6 +4,7 @@ This is a Flask-based web application that uses OpenCV and MediaPipe to detect s
 
 ## Preview
 <!--![IMG_20250218_111715](https://github.com/user-attachments/assets/d4d66fb7-8f1a-4ded-a745-8dafd0e6d714)-->
+(Wait a few seconds if preview has not loaded)
 ![vdo](https://github.com/user-attachments/assets/4351980a-cab4-4518-b70e-e95ea2b56e7f)
 
 
